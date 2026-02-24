@@ -1,0 +1,54 @@
+assistant:
+  name: "AutoBot"
+  version: "0.2.0"
+
+llm:
+  intent_model:
+    name: "autobot-instruct"
+    local_path: "./models/autobot-instruct"
+    max_tokens: 2048
+    temperature: 0.3
+
+memory:
+  short_term_limit: 100
+  long_term_db: "./memory/long_term.db"
+  short_term_db: "./memory/short_term.db"
+  vector_store: "./memory/vector_store"
+
+interfaces:
+  text:
+    enabled: true
+  voice:
+    enabled: true
+
+tools:
+  enabled:
+    - "web_search"
+    - "send_email"
+
+logging:
+  level: "INFO"
+  file: "./logs/autobot.log"
+
+performance:
+  cache_ttl: 300
+  batch_size: 5
+
+debug:
+  enabled: true
+
+agentic:
+  react_max_steps: 8
+  max_context_length: 32768
+  max_tokens_hard_limit: 4096
+  langchain:
+    enabled: true
+    use_bm25_rerank: true
+    use_local_doc_loader: true
+    chunk_size: 900
+    chunk_overlap: 120
+    local_doc_max_files: 10
+    local_doc_max_chunks: 8
+    local_doc_max_chars: 7000
+    local_documents:
+      - "./local"

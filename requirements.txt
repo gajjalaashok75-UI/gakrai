@@ -1,0 +1,54 @@
+# Core runtime
+transformers
+torch
+accelerate
+pyyaml
+python-dotenv
+requests
+pydantic
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langgraph
+langchain-experimental
+langchain-guardrails
+langchain-tools
+rank-bm25
+pypdf
+
+# Memory and retrieval
+chromadb
+faiss-cpu
+sentence-transformers
+numpy
+
+# Web-search toolchain
+beautifulsoup4
+lxml
+ddgs
+duckduckgo-search
+trafilatura
+justext
+boilerpy3
+rich
+
+# Ingestion and document processing
+pandas
+tqdm
+langdetect
+nltk
+pdfplumber
+python-docx
+scikit-learn
+tree-sitter
+#textual-tree-sitter-languages
+
+# Voice interface (optional but recommended)
+pyttsx3
+SpeechRecognition
+pyaudio
+
+# API/integration utilities
+fastapi
+asyncio-mqtt

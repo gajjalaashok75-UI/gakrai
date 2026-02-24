@@ -1,0 +1,143 @@
+2026-02-19 19:34:07,091 - __main__ - INFO - Starting AutoBot ReAct Agent...
+2026-02-19 19:34:07,091 - core.react_orchestrator - INFO - Initializing ReAct Orchestrator...
+2026-02-19 19:34:22,777 - core.llm_interface - INFO - Loaded model autobot_instruct from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-instruct
+2026-02-19 19:34:32,437 - core.llm_interface - INFO - Loaded model autobot_rag from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-rag
+2026-02-19 19:34:32,448 - tools.tool_registry - INFO - Loaded tool: web_search with lazy wrapper
+2026-02-19 19:34:32,448 - tools.tool_registry - INFO - send_email tool is no longer supported; skipping.
+2026-02-19 19:34:32,448 - tools.tool_registry - INFO - Tool registry initialized with tools: ['web_search']
+2026-02-19 19:34:32,470 - memory.memory_manager - WARNING - ChromaDB not available, vector memory disabled
+2026-02-19 19:34:32,470 - core.react_orchestrator - WARNING - LangGraph not available - using fallback ReAct
+2026-02-19 19:35:22,624 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': 'hot news in India today', 'max_results': 5}
+2026-02-19 19:35:22,624 - core.react_orchestrator - INFO - Executing web search attempt 1/3
+2026-02-19 19:35:23,673 - tools.tool_registry - INFO - Web search runner loaded from tools.web_search.search
+2026-02-19 19:35:24,215 - primp - INFO - response: https://www.bing.com/search?q=hot+news+in+India+today 200
+2026-02-19 19:35:26,168 - trafilatura.core - WARNING - discarding data: None
+2026-02-19 19:35:29,236 - core.react_orchestrator - INFO - Web search successful: 4 results found (attempt 1)
+2026-02-19 19:35:29,236 - core.react_orchestrator - INFO - Sending web search results to RAG model for summarization
+2026-02-19 22:04:08,707 - __main__ - INFO - Starting AutoBot ReAct Agent...
+2026-02-19 22:04:08,707 - core.react_orchestrator - INFO - Initializing ReAct Orchestrator...
+2026-02-19 22:04:28,133 - core.llm_interface - INFO - Loaded model autobot_instruct from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-instruct
+2026-02-19 22:04:28,133 - tools.tool_registry - INFO - Loaded tool: web_search with lazy wrapper
+2026-02-19 22:04:28,133 - tools.tool_registry - INFO - Tool registry initialized with tools: ['web_search']
+2026-02-19 22:04:28,153 - memory.memory_manager - WARNING - ChromaDB not available, vector memory disabled
+2026-02-19 22:04:28,155 - core.react_orchestrator - WARNING - LangGraph not available - using fallback ReAct
+2026-02-19 22:06:47,660 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': 'hot news in India today', 'max_results': 5}
+2026-02-19 22:06:47,660 - core.react_orchestrator - INFO - Executing web search for: hot news in India today
+2026-02-19 22:06:48,553 - tools.tool_registry - INFO - Web search runner loaded from tools.web_search.search
+2026-02-19 22:06:48,800 - primp.impersonate - WARNING - Impersonate 'chrome_123' does not exist, using 'random'
+2026-02-19 22:06:49,588 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=hot%20news%20in%20India%20today 200
+2026-02-19 22:06:50,066 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=hot+news+in+India+today&limit=1 200
+2026-02-19 22:06:52,521 - primp - INFO - response: https://yandex.com/search/site/?text=hot+news+in+India+today&web=1&searchid=6482047 200
+2026-02-19 22:06:55,511 - trafilatura.core - WARNING - discarding data: None
+2026-02-19 22:06:58,495 - core.react_orchestrator - INFO - Web search returned 4 results
+2026-02-19 22:06:58,497 - core.react_orchestrator - INFO - Sending web search results to instruct model for summarization
+2026-02-19 22:07:46,690 - __main__ - INFO - Starting AutoBot ReAct Agent...
+2026-02-19 22:07:46,690 - core.react_orchestrator - INFO - Initializing ReAct Orchestrator...
+2026-02-19 22:08:00,750 - core.llm_interface - INFO - Loaded model autobot_instruct from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-instruct
+2026-02-19 22:08:00,750 - tools.tool_registry - INFO - Loaded tool: web_search with lazy wrapper
+2026-02-19 22:08:00,750 - tools.tool_registry - INFO - Tool registry initialized with tools: ['web_search']
+2026-02-19 22:08:00,762 - memory.memory_manager - WARNING - ChromaDB not available, vector memory disabled
+2026-02-19 22:08:00,762 - core.react_orchestrator - WARNING - LangGraph not available - using fallback ReAct
+2026-02-19 22:08:45,122 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': 'hot news in India today', 'max_results': 5}
+2026-02-19 22:08:45,122 - core.react_orchestrator - INFO - Executing web search for: hot news in India today
+2026-02-19 22:08:45,762 - tools.tool_registry - INFO - Web search runner loaded from tools.web_search.search
+2026-02-19 22:08:45,961 - primp.impersonate - WARNING - Impersonate 'chrome_123' does not exist, using 'random'
+2026-02-19 22:08:46,288 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=hot%20news%20in%20India%20today 200
+2026-02-19 22:08:47,205 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=hot+news+in+India+today&limit=1 200
+2026-02-19 22:08:47,830 - primp - INFO - response: https://search.yahoo.com/search;_ylt=962-Nep-RCxJkOTTStaIt_dY;_ylu=iEb47dJ5XbYnRSk30LCkYYmRsBNLSCqGxnI8-DMObO5WIvI?p=hot+news+in+India+today 200
+2026-02-19 22:08:50,062 - boilerpy3 - WARNING - Warning: SAX input contains nested A elements -- You have probably hit a bug in your HTML parser (e.g., NekoHTML bug #2909310). Please clean the HTML externally and feed it to BoilerPy3 again. Trying to recover somehow...
+2026-02-19 22:08:54,361 - core.react_orchestrator - INFO - Web search returned 4 results
+2026-02-19 22:08:54,361 - core.react_orchestrator - INFO - Sending web search results to instruct model for summarization
+2026-02-19 22:10:15,064 - __main__ - INFO - Starting AutoBot ReAct Agent...
+2026-02-19 22:10:15,064 - core.react_orchestrator - INFO - Initializing ReAct Orchestrator...
+2026-02-19 22:10:29,565 - core.llm_interface - INFO - Loaded model autobot_instruct from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-instruct
+2026-02-19 22:10:29,565 - tools.tool_registry - INFO - Loaded tool: web_search with lazy wrapper
+2026-02-19 22:10:29,565 - tools.tool_registry - INFO - Tool registry initialized with tools: ['web_search']
+2026-02-19 22:10:29,565 - memory.memory_manager - WARNING - ChromaDB not available, vector memory disabled
+2026-02-19 22:10:29,571 - core.react_orchestrator - WARNING - LangGraph not available - using fallback ReAct
+2026-02-19 22:11:22,773 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': "today's news in India"}
+2026-02-19 22:11:22,773 - core.react_orchestrator - INFO - Executing web search for: today's news in India
+2026-02-19 22:11:23,399 - tools.tool_registry - INFO - Web search runner loaded from tools.web_search.search
+2026-02-19 22:11:23,581 - primp.impersonate - WARNING - Impersonate 'edge_127' does not exist, using 'random'
+2026-02-19 22:11:24,296 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 22:11:24,708 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 22:11:25,942 - httpx - INFO - HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-02-19 22:11:27,232 - core.react_orchestrator - INFO - Web search returned 0 results
+2026-02-19 22:11:27,232 - core.react_orchestrator - INFO - Sending web search results to instruct model for summarization
+2026-02-19 22:11:48,945 - core.react_orchestrator - INFO - Instruct model summarization complete
+2026-02-19 22:24:32,651 - __main__ - INFO - Starting AutoBot ReAct Agent...
+2026-02-19 22:24:32,651 - core.react_orchestrator - INFO - Initializing ReAct Orchestrator...
+2026-02-19 22:24:44,642 - core.llm_interface - INFO - Loaded model autobot_instruct from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-instruct
+2026-02-19 22:24:44,646 - tools.tool_registry - INFO - Loaded tool: web_search with lazy wrapper
+2026-02-19 22:24:44,648 - tools.tool_registry - INFO - Tool registry initialized with tools: ['web_search']
+2026-02-19 22:24:44,651 - memory.memory_manager - WARNING - ChromaDB not available, vector memory disabled
+2026-02-19 22:24:44,653 - core.react_orchestrator - WARNING - LangGraph not available - using fallback ReAct
+2026-02-19 22:25:44,096 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': 'today\'s news in India with today date"', 'max_results': 5}
+2026-02-19 22:25:44,096 - core.react_orchestrator - INFO - Executing web search for: today's news in India with today date"
+2026-02-19 22:25:44,755 - tools.tool_registry - INFO - Web search runner loaded from tools.web_search.search
+2026-02-19 22:25:44,981 - primp.impersonate - WARNING - Impersonate 'chrome_126' does not exist, using 'random'
+2026-02-19 22:25:45,719 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India%20with%20today%20date 200
+2026-02-19 22:25:46,431 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India+with+today+date&limit=1 200
+2026-02-19 22:25:47,878 - ddgs.ddgs - INFO - Error in engine mojeek: DDGSException("HTTPError: HTTPError('HTTP 403 Forbidden for URL: https://www.mojeek.com/search?q=today%27s+news+in+India+with+today+date', 403, 'https://www.mojeek.com/search?q=today%27s+news+in+India+with+today+date', 'Forbidden')")
+2026-02-19 22:25:48,478 - primp - INFO - response: https://search.yahoo.com/search;_ylt=h_8tt8BONscxhcl6tGzUN3pz;_ylu=mNUJ3Ybo9UQXAfCS0Rwhl9UNX-npI3Q8r9MuMGoNpTaZGsA?p=today%27s+news+in+India+with+today+date 200
+2026-02-19 22:25:54,377 - core.react_orchestrator - INFO - Web search returned 3 results
+2026-02-19 22:25:54,377 - core.react_orchestrator - INFO - Sending web search results to instruct model for summarization
+2026-02-19 22:38:11,235 - __main__ - INFO - Starting AutoBot ReAct Agent...
+2026-02-19 22:38:11,236 - core.react_orchestrator - INFO - Initializing ReAct Orchestrator...
+2026-02-19 22:38:22,921 - core.llm_interface - INFO - Loaded model autobot_instruct from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-instruct
+2026-02-19 22:38:22,921 - tools.tool_registry - INFO - Loaded tool: web_search with lazy wrapper
+2026-02-19 22:38:22,921 - tools.tool_registry - INFO - Tool registry initialized with tools: ['web_search']
+2026-02-19 22:38:22,921 - memory.memory_manager - WARNING - ChromaDB not available, vector memory disabled
+2026-02-19 22:38:22,921 - core.react_orchestrator - WARNING - LangGraph not available - using fallback ReAct
+2026-02-19 22:39:02,258 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': "today's news in India"}
+2026-02-19 22:39:02,273 - core.react_orchestrator - INFO - Executing web search for: today's news in India
+2026-02-19 22:39:02,921 - tools.tool_registry - INFO - Web search runner loaded from tools.web_search.search
+2026-02-19 22:39:03,097 - primp.impersonate - WARNING - Impersonate 'safari_17.5' does not exist, using 'random'
+2026-02-19 22:39:03,643 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 22:39:04,459 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 22:39:04,875 - primp - INFO - response: https://www.google.com/search?q=today%27s+news+in+India&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-02-19 22:39:06,920 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 22:39:07,126 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 22:39:07,942 - ddgs.ddgs - INFO - Error in engine mojeek: DDGSException("HTTPError: HTTPError('HTTP 403 Forbidden for URL: https://www.mojeek.com/search?q=today%27s+news+in+India', 403, 'https://www.mojeek.com/search?q=today%27s+news+in+India', 'Forbidden')")
+2026-02-19 22:39:08,259 - primp - INFO - response: https://www.google.com/search?q=today%27s+news+in+India&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-02-19 22:39:10,011 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 22:39:11,020 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 22:39:12,569 - primp - INFO - response: https://yandex.com/search/site/?text=today%27s+news+in+India&web=1&searchid=9240726 200
+2026-02-19 22:39:14,733 - core.react_orchestrator - INFO - Web search returned 1 results
+2026-02-19 22:39:14,733 - core.react_orchestrator - INFO - Sending web search results to instruct model for summarization
+2026-02-19 22:45:34,369 - core.react_orchestrator - INFO - Instruct model summarization complete
+2026-02-19 23:52:01,731 - __main__ - INFO - Starting AutoBot ReAct Agent...
+2026-02-19 23:52:01,733 - core.react_orchestrator - INFO - Initializing ReAct Orchestrator...
+2026-02-19 23:52:52,213 - core.llm_interface - INFO - Loaded model autobot_instruct from C:\Users\gajja\Documents\cars\autobot-main\autobot-main\models\autobot-instruct
+2026-02-19 23:52:52,213 - tools.tool_registry - INFO - Loaded tool: web_search with lazy wrapper
+2026-02-19 23:52:52,213 - tools.tool_registry - INFO - Tool registry initialized with tools: ['web_search']
+2026-02-19 23:52:52,217 - memory.memory_manager - WARNING - ChromaDB not available, vector memory disabled
+2026-02-19 23:52:52,217 - core.react_orchestrator - WARNING - LangGraph not available - using fallback ReAct
+2026-02-19 23:54:35,886 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': "today's news in India"}
+2026-02-19 23:54:35,886 - core.react_orchestrator - INFO - Executing web search for: today's news in India
+2026-02-19 23:54:37,095 - tools.tool_registry - INFO - Web search runner loaded from tools.web_search.search
+2026-02-19 23:54:37,433 - primp.impersonate - WARNING - Impersonate 'chrome_107' does not exist, using 'random'
+2026-02-19 23:54:37,872 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 23:54:38,692 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 23:54:39,768 - httpx - INFO - HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-02-19 23:54:41,250 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 23:54:41,455 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 23:54:42,583 - primp - INFO - response: https://search.brave.com/search?q=today%27s+news+in+India&source=web 200
+2026-02-19 23:54:44,138 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 23:54:44,147 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 23:54:45,245 - httpx - INFO - HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-02-19 23:54:46,592 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=today%27s%20news%20in%20India 200
+2026-02-19 23:54:46,745 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=today%27s+news+in+India&limit=1 200
+2026-02-19 23:54:47,028 - primp - INFO - response: https://www.google.com/search?q=today%27s+news+in+India&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-02-19 23:54:49,426 - core.react_orchestrator - INFO - Web search returned 1 results
+2026-02-19 23:54:49,433 - core.react_orchestrator - INFO - Generating grounded final response with 4-message tool context
+2026-02-20 00:05:30,145 - core.react_orchestrator - INFO - Grounded final response generated
+2026-02-20 00:07:25,252 - core.react_orchestrator - INFO - Tool detected: web_search with args: {'query': 'latest news in India', 'max_results': 5}
+2026-02-20 00:07:25,252 - core.react_orchestrator - INFO - Executing web search for: latest news in India
+2026-02-20 00:07:25,894 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20news%20in%20India 200
+2026-02-20 00:07:26,411 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=latest+news+in+India&limit=1 200
+2026-02-20 00:07:28,286 - primp - INFO - response: https://search.brave.com/search?q=latest+news+in+India&source=web 200
+2026-02-20 00:07:34,573 - trafilatura.core - WARNING - discarding data: None
+2026-02-20 00:07:35,839 - core.react_orchestrator - INFO - Web search returned 4 results
+2026-02-20 00:07:35,839 - core.react_orchestrator - INFO - Generating grounded final response with 4-message tool context
+2026-02-20 00:30:31,658 - core.react_orchestrator - INFO - Grounded final response generated
