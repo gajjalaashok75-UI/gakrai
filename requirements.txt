@@ -16,6 +16,8 @@ langchain-guardrails
 langchain-tools
 rank-bm25
 pypdf
+pandas
+numpy
 
 # Memory and retrieval
 chromadb
