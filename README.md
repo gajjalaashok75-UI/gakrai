@@ -595,4 +595,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**AutoBot** - Intelligent automation through local AI reasoning and action. Built with ❤️ for developers and researchers.
+**AutoBot** - Intelligent automation through local AI reasoning and action. Built with ❤️ for developers and researchers. by Gakr team
